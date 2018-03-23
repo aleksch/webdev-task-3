@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Места</title>
 </head>
+
 <body>
-    kek
+    <section class="controlls">
+        <div class="controlls__row controlls__search">
+            <input class="controlss__search__input" type="text" name="search" id="search">
+        </div>
+        <div class="controlls__row controlls__add-place">
+            <input class="controlls__add-place__input" type="text" name="place-name" id="place-name">
+            <button class="controlls__add-place__button">Создать</button>
+        </div>
+        <div class="controlls__row">
+            <div class="controlls__title">Места</div>
+            <a href="#" class="controlls__delete-all">X</a>
+            <div class="controlls__sort">
+                <input class="controlls__sort__all" type="radio" name="show" id="show-all" checked>
+                <input class="controlls__sort__unvisited" type="radio" name="show" id="show-unvisited">
+                <input class="controlls__sort__visited" type="radio" name="show" id="show-visited">                
+            </div>
+        </div>
+    </section>
+    <section class="places-list">
+        {{!-- <div class="place">
+            <button class="place__edit">Edit</button>
+            <button class="place__delete">Del</button>
+            <div class="place__name">Moscow</div>
+            <button class="place__move-top">top</button>
+            <button class="place__move-down">down</button>
+            <input class="place__visited" type="checkbox" name="isVisited" id="isVisited">
+            <div class="place__edit__controlls">
+                <input class="place__edit__controlls_name" type="text" name="new-name" id="new-name">
+                <button class="place__edit__controlls__save">Y</button>
+            <button class="place__edit__controlls__cancel">N</button>
+            </div>            
+        </div> --}}
+    </section>
+    <button class="kek">qwe</button>
 </body>
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
+
 </html>

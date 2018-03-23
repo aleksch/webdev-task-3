@@ -4,7 +4,7 @@ const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
 
-const {mainController} = require('./controllers/mainController');
+const { mainController } = require('./controllers/mainController');
 
 const app = express();
 
@@ -19,7 +19,7 @@ app.use(express.static(publicDir));
 
 app.get('/', mainController);
 
-app.listen(8080, () => {
+app.listen(8082, () => {
     console.info('Open http://localhost:8080/');
 });
 
